@@ -19,7 +19,7 @@ public class ConnectExample {
 		String ip = "221.179.193.178";
 		int port = 8833;
 		int timeout = 1000;
-		String passwd = "30140906tao";
+		String passwd = "******";
 		 pool = new JedisPool(new JedisPoolConfig(), ip, port, timeout, passwd);
 		try (Jedis jedis = pool.getResource()) {
 			jedis.set("foo", "bar");
